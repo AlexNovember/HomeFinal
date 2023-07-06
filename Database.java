@@ -101,9 +101,9 @@ public class Database {
 			for (Animal animal : animals) {
 				String className = animal.getClass().getSimpleName();
 				String name = animal.getName();
-				String skills = animal.getSkills().replaceAll(",\\s+", " / ");
+				String skills = animal.getSkills().replaceAll(",\\s+", ",");
 
-				String line = className + " / " + name + " / " + skills;
+				String line = className + "," + name + "," + skills;
 				writer.write(line);
 				writer.newLine();
 			}

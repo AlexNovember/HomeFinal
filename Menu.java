@@ -1,4 +1,3 @@
-// Класс Menu для отображения меню и взаимодействия с пользователем
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,7 +37,7 @@ public class Menu {
 				}
 			} catch (InputMismatchException e) {
 				System.out.println("Ошибка: неверный формат ввода. Попробуйте снова.");
-				scanner.nextLine(); // Очистка буфера сканера после ошибочного ввода
+				scanner.nextLine(); // Очистка буфера после ошибочного ввода
 			}
 		}
 	}
